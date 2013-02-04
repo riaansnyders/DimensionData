@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="3617b7dc-7c71-42bd-b80d-a1a39fcfb4cd" name="DoJ_ESB_ProcessView" linkedPackageId="169d1fd3-c9a0-4a1d-9265-282bb3d7fcb2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="fd254aef-29af-4a07-af3a-43007577dee1">
+      <profileInstance Id="15472d28-827b-4ea7-ab2e-d21cbe6a1d12" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5f2cb59a-bf5c-4971-9e68-e0323df599df">
+      <profileInstance Id="779b88f2-4a9f-49a6-8a91-843eeac362ea" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="9fe1737c-9fc8-4ffd-bb04-92a5754284fd" name="Sequencer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7b192e61-4ef0-499c-815a-1833c0a628ec" />
+        <suppliersInternal>
+          <dependency Id="c18744fd-5117-4cd9-987c-63b404201d38">
+            <componentMoniker Id="901ce363-4bed-4202-8fad-a938ee6c44cd" LastKnownName="Message Validator" />
+            <elementDefinition Id="f5b428b6-317b-49e2-a34d-c01164778e9b" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0f3d9a70-1b8d-47e8-8359-66b011c8375d" name="Receiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="27aca6d1-3bdf-4946-a5e0-a9261162a97c" />
+        <suppliersInternal>
+          <dependency Id="9532da50-0b78-4fe6-a483-7913923384d4">
+            <componentMoniker Id="901ce363-4bed-4202-8fad-a938ee6c44cd" LastKnownName="Message Validator" />
+            <elementDefinition Id="159f4bf8-b28e-4756-8e77-750b7fe2d00f" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="901efd5e-e85c-4083-917a-b45d2b781626" name="Sender" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19d49956-994c-4492-95e3-c7cb2c5b7135" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="901ce363-4bed-4202-8fad-a938ee6c44cd" name="Message Validator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15eeafc6-4773-4b67-a495-a8e4c7174f6c" />
+        <suppliersInternal>
+          <dependency Id="7e86b942-25e6-49ec-9598-315de4a24f34">
+            <componentMoniker Id="91f07bb4-db40-4ab8-8536-6ec673640ed2" LastKnownName="Message Constructor" />
+            <elementDefinition Id="8ed69dfa-2f0c-4a62-b360-dd480375b201" />
+          </dependency>
+          <dependency Id="1e83c910-1007-4d96-bc35-647ff3e0d31a">
+            <componentMoniker Id="2056c576-07c2-4c72-88ea-9d6f79555a9a" LastKnownName="ExceptionHandler" />
+            <elementDefinition Id="1ae18115-10ee-4391-b5a1-2063972b6696" />
+          </dependency>
+          <dependency Id="203a1d9e-dd6b-4074-8357-2180fff44357">
+            <componentMoniker Id="42fad9cb-fb59-476f-9911-54e881aef505" LastKnownName="Auditing" />
+            <elementDefinition Id="454f1cdd-ad99-4aa7-a0a6-c72902a566d2" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="91f07bb4-db40-4ab8-8536-6ec673640ed2" name="Message Constructor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ffe0d5b1-c317-4085-9126-c7166cc0c61b" />
+        <suppliersInternal>
+          <dependency Id="5af070b4-1194-49d6-93db-1eb2b7fbd18f">
+            <componentMoniker Id="be0cea69-f0e9-4f6b-8b52-9f5d2e66dd88" LastKnownName="Router" />
+            <elementDefinition Id="4553f023-220a-433c-85cb-a2ccf1679231" />
+          </dependency>
+          <dependency Id="fa9cb456-8555-4beb-ad01-cafd69072898">
+            <componentMoniker Id="2056c576-07c2-4c72-88ea-9d6f79555a9a" LastKnownName="ExceptionHandler" />
+            <elementDefinition Id="84253b8c-da2e-48ea-849f-b04e35c2dfb0" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="be0cea69-f0e9-4f6b-8b52-9f5d2e66dd88" name="Router" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14e7a82e-09c6-4fc4-8a41-ff775efd1cd0" />
+        <suppliersInternal>
+          <dependency Id="1557d456-4857-4346-b02e-68c0e44b1a37">
+            <componentMoniker Id="2056c576-07c2-4c72-88ea-9d6f79555a9a" LastKnownName="ExceptionHandler" />
+            <elementDefinition Id="d9c2e9d9-15fd-467c-b930-763e1d53acba" />
+          </dependency>
+          <dependency Id="684482f2-9ccb-4798-9a46-e844780ab3f1">
+            <componentMoniker Id="42fad9cb-fb59-476f-9911-54e881aef505" LastKnownName="Auditing" />
+            <elementDefinition Id="e059f90f-dd5c-44ac-9796-6dfdf279c763" />
+          </dependency>
+          <dependency Id="bbf2815e-94ab-49d1-b5c8-9ef6cff2d927">
+            <componentMoniker Id="901efd5e-e85c-4083-917a-b45d2b781626" LastKnownName="Sender" />
+            <elementDefinition Id="6437e11e-93ec-4005-a5b5-f1c0df859b60" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2056c576-07c2-4c72-88ea-9d6f79555a9a" name="ExceptionHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="451211ac-3f9f-45c1-a528-62d22b436171" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="42fad9cb-fb59-476f-9911-54e881aef505" name="Auditing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="75aa1522-8fa6-455a-8a01-1a0cac71f5b3" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="169d1fd3-c9a0-4a1d-9265-282bb3d7fcb2" name="MX_CoJ_ESB">
+    <elementDefinition Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b" />
+  </package>
+</componentModel>

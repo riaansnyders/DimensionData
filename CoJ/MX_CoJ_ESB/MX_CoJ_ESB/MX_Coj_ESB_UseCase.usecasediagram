@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="71a1dfce-1a1a-45dc-abfe-977f75d12a04" name="MX_Doj_ESB_UseCase" linkedPackageId="dbd384eb-f55e-43cf-8e1b-1c2c74003182" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d2eaebfd-8982-463f-816a-0dc6aad308ff">
+      <elementDefinition Id="fde255bc-2572-49b8-ac36-e279e59c4e02" />
+      <body>This is a Generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="bbdba556-31a9-43e2-9124-9ef30df8c8ff">
+      <profileInstance Id="1d6df0d9-5533-488a-ad6f-1fbffa128e60" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="456cb0ff-7c1f-4077-b29e-4a6ffc90c7d0">
+      <profileInstance Id="8ac0b7f3-23a0-4c49-a5e0-352e2ac0cde5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7a97ef2b-c6e6-4000-84f5-a03c5198ec2f" name="LIS" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c378c2a-5d99-417d-811a-3cedeb40bcc5" />
+        <suppliersInternal>
+          <dependency Id="8c8754bf-3fcb-4f16-87b4-95efd99b95e5">
+            <useCaseMoniker Id="fe233bb1-beeb-458e-966d-cbd4bef4d9df" LastKnownName="LIS to VA3 Integrations" />
+            <elementDefinition Id="87ec2246-d35d-4331-a046-6f413a2067ff" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="59208bc5-5835-42a5-bbc5-ddddf1aef350" name="VA3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe" />
+        <suppliersInternal>
+          <dependency Id="a9dffab9-0d99-4424-aa78-58680f9ca462">
+            <useCaseMoniker Id="a346038b-ddfc-4c54-8b00-1db7222428f9" LastKnownName="VA3 to LIS Integrations" />
+            <elementDefinition Id="cb47eefa-d7fe-4050-9e44-1fa5fba9a76f" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e5237d6c-e5ce-43d6-a711-1feb9638a9e3" name="DoJ ESB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23054606-1037-49e4-9664-1b75ed5a57f9" />
+        <targetEnds>
+          <association Id="21ee78ac-6173-4a32-8c84-12c543cfbaeb" isDerived="false" sourceEndRoleName="DoJ ESB" targetEndRoleName="DoJ To LIS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="024283db-7178-4e9e-8013-e71446c1ca6e" LastKnownName="CoJ To LIS" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a52e5e9c-221c-4118-ad96-b106093bbc31" name="DoJ ESB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15cdfc8d-2d20-4e82-b9c0-b1b531bed184" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="84371300-bc67-4c70-aaf6-dee2aa37961b" name="DoJ To LIS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b2f68f4-a15d-48f4-a558-aecc9e9bc8d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2956d96a-3cb4-4e9f-837b-d9416bf373d1" />
+          </association>
+          <association Id="45556a4c-208c-49de-8cf1-b9b83ad22947" isDerived="false" sourceEndRoleName="DoJ ESB" targetEndRoleName="DoJ To VA3" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e588f104-15f6-4edd-b738-3b49cb7087df" LastKnownName="CoJ To VA3" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f0a3918-d69f-40d0-aab6-05bc2eac8d8a" name="DoJ ESB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77afb5bc-241f-4600-808e-506fd4bc13cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72e51420-2bef-4b38-924c-ae203ac780c1" name="DoJ To VA3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa66926a-4c23-4e4e-8983-1ab0958a0b54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c56d4763-894f-4119-981d-bffaab0bd74b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe233bb1-beeb-458e-966d-cbd4bef4d9df" name="LIS to VA3 Integrations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b79bd1d-1df8-486f-9509-1ddd2168176e" />
+        <targetEnds>
+          <association Id="99c8580d-85ab-4d45-a92b-f0c413b24be7" isDerived="false" sourceEndRoleName="LIS to VA3 Integrations" targetEndRoleName="DoJ ESB" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="e5237d6c-e5ce-43d6-a711-1feb9638a9e3" LastKnownName="DoJ ESB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e57bf50-ddca-4425-9a34-21ff5e6bdd12" name="LIS to VA3 Integrations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e726a77c-285c-4bbb-bd38-4ad178089b6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b4b0850-7d04-4c01-b0be-2ce639419859" name="DoJ ESB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d911860f-a238-4bed-b3cf-25f385dbcc71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="654c3f7a-7c3d-4bc8-8ebf-332985a1c8d4" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a346038b-ddfc-4c54-8b00-1db7222428f9" name="VA3 to LIS Integrations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51602682-d885-47b3-89ac-326a1fac8fb9" />
+        <targetEnds>
+          <association Id="2a1bf0bb-3f88-4635-b40c-1ac18ba8f91e" isDerived="false" sourceEndRoleName="VA3 to LIS Integrations" targetEndRoleName="DoJ ESB" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="e5237d6c-e5ce-43d6-a711-1feb9638a9e3" LastKnownName="DoJ ESB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91fc4db6-4083-4ce9-a327-53efe5698372" name="VA3 to LIS Integrations" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d2c0518-a032-4153-8ad8-cb206f2cab48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83ad216e-a6b5-4aef-946c-a5efc95ac850" name="DoJ ESB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87345b92-108e-43c0-a550-5452541a51c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c80f4ddf-4a9a-4f67-a886-40d8f233fdba" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e588f104-15f6-4edd-b738-3b49cb7087df" name="CoJ To VA3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db4a7d9b-70a7-49b5-94b7-60f486eb1cc1" />
+        <suppliersInternal>
+          <dependency Id="688f9997-8076-4fc4-a059-d20a0bd9f397">
+            <actorMoniker Id="59208bc5-5835-42a5-bbc5-ddddf1aef350" LastKnownName="VA3" />
+            <elementDefinition Id="c0acae23-dc1a-46fd-a4e9-25e51cdf5e23" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="024283db-7178-4e9e-8013-e71446c1ca6e" name="CoJ To LIS" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e10817d3-6011-404a-aef2-2c7f0ba51816" />
+        <suppliersInternal>
+          <dependency Id="ef61329e-3b0b-4433-b8b1-3059faeb79dc">
+            <actorMoniker Id="7a97ef2b-c6e6-4000-84f5-a03c5198ec2f" LastKnownName="LIS" />
+            <elementDefinition Id="5fc155ed-a09e-4dc1-8a73-da36323469e9" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="dbd384eb-f55e-43cf-8e1b-1c2c74003182" name="MX_CoJ_ESB">
+    <elementDefinition Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b" />
+  </package>
+</useCaseModelRoot>

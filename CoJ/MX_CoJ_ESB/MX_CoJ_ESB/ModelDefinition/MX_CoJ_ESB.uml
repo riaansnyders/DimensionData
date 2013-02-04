@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b"
+  name="MX_CoJ_ESB" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="fde255bc-2572-49b8-ac36-e279e59c4e02">
+      <body>This is a Generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="9c378c2a-5d99-417d-811a-3cedeb40bcc5"
+        name="LIS"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2788d539-8199-4b89-bf84-34f1af3e9a33">
+            <useCaseMoniker
+              Id="6e79e8ef-1cd4-4712-bc87-fba5bdc9a318"
+              LastKnownName="New Process Descriptions"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="e8d5ac77-5e86-4ef6-8483-c7966151326e">
+            <useCaseMoniker
+              Id="67ac4acc-af2f-492e-bc12-1d20db7b0fad"
+              LastKnownName="New Sectional Schemes"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="c45b72d8-12f6-4543-ba31-988ddca21b0c">
+            <useCaseMoniker
+              Id="c78d7f56-82e0-4cbf-b247-b0f0c03fa08e"
+              LastKnownName="New Valuation Types"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="f5c9fac3-ebca-4255-b5ce-31b59b47c32a">
+            <useCaseMoniker
+              Id="b5d00ee4-edf1-498d-a4ea-05c7efd3850b"
+              LastKnownName="New Ratings"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="d4b19c63-cf0a-47a2-9f12-8913598f6544">
+            <useCaseMoniker
+              Id="08d12cc4-e241-4b59-b215-b58a5949d777"
+              LastKnownName="New Township Names"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="525e5bec-b343-4848-8539-c12ec3db94b8">
+            <useCaseMoniker
+              Id="a1924058-b617-4a8c-98ee-c2ce88d189cb"
+              LastKnownName="New Zoning Codes"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="8c1625c9-424f-42d3-acb9-a42522ad319e">
+            <useCaseMoniker
+              Id="6551748c-6c7e-4354-90a5-2426802103a2"
+              LastKnownName="New Town Planning"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="d3e99d03-aeb1-42c3-bd6f-cc458ddebf72">
+            <useCaseMoniker
+              Id="4c71c4da-626f-4ea7-8444-337120c44f79"
+              LastKnownName="New Property Details"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="4e9b9539-43ec-4747-9e80-68ae891106ea">
+            <useCaseMoniker
+              Id="5b20377d-65cb-427d-9b4f-3c431f373774"
+              LastKnownName="New Valuation Rolls"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="e5e524c0-337d-42ef-b10f-43947ec9ccf2">
+            <useCaseMoniker
+              Id="fa99bc49-211e-48a7-90d0-2411bb0a7da5"
+              LastKnownName="New Unit Type"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="28abbf9c-669e-4558-847e-2e93157dd39d">
+            <useCaseMoniker
+              Id="5d6555c2-4f46-459d-8b2f-4a17c668bcab"
+              LastKnownName="New Processes Status"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="224150c5-e8c0-4191-bd1e-9811df2218bf">
+            <useCaseMoniker
+              Id="a434ec7a-14b4-48de-978b-2d62bcfce6d7"
+              LastKnownName="LIS Data Update"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="ddd3f751-5543-4108-b543-62a7d733f084">
+            <useCaseMoniker
+              Id="ed3758d6-55d7-48f2-841b-182fc1216d0a"
+              LastKnownName="New Valuation Remarks"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="87ec2246-d35d-4331-a046-6f413a2067ff">
+            <useCaseMoniker
+              Id="1b79bd1d-1df8-486f-9509-1ddd2168176e"
+              LastKnownName="LIS to VA3 Integrations"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+        name="VA3"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="cdd8add8-64a5-4393-98e2-285243aa964a">
+            <useCaseMoniker
+              Id="bae4afa5-89ab-4500-a59e-bb33cfc5bda4"
+              LastKnownName="Task Update"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="b3b2ad14-652c-4160-9351-984b20a0939e">
+            <useCaseMoniker
+              Id="dcd16074-2e09-4eb1-937c-f26bf6346ea9"
+              LastKnownName="Value Update"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="53f8ce1c-b12c-48c2-a427-d83575dbcea4">
+            <useCaseMoniker
+              Id="91d6ec53-901b-4302-b89a-de75fa878b9c"
+              LastKnownName="Application Entry"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="cb47eefa-d7fe-4050-9e44-1fa5fba9a76f">
+            <useCaseMoniker
+              Id="51602682-d885-47b3-89ac-326a1fac8fb9"
+              LastKnownName="VA3 to LIS Integrations"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+        name="CoJ ESB"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="81680863-e466-4ed3-ae58-eeaff63e7ca7"
+            isDerived="false"
+            sourceEndRoleName="CoJ ESB"
+            targetEndRoleName="Task Update"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bae4afa5-89ab-4500-a59e-bb33cfc5bda4"
+              LastKnownName="Task Update"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2e334d2-b3f8-4a29-a65b-a74829533d39"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff5a3b26-4009-442f-a579-86cf86c9d70c"
+                  name="Task Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="457c5f09-0b60-4b06-918d-1a87bb58a79b"
+            isDerived="false"
+            sourceEndRoleName="CoJ ESB"
+            targetEndRoleName="Application Entry"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91d6ec53-901b-4302-b89a-de75fa878b9c"
+              LastKnownName="Application Entry"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84d08316-8ba8-4a90-8715-f9da56d59135"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0cb52597-d464-4353-b9ec-926850823be0"
+                  name="Application Entry"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fb14c44c-a83f-4a3d-a72a-4952bc1fc3c6"
+            isDerived="false"
+            sourceEndRoleName="CoJ ESB"
+            targetEndRoleName="Value Update"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dcd16074-2e09-4eb1-937c-f26bf6346ea9"
+              LastKnownName="Value Update"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2980e093-5eb7-4470-89c6-b93478cf42ee"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ffeea9d-6592-4378-a00d-56be299f140c"
+                  name="Value Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bae4afa5-89ab-4500-a59e-bb33cfc5bda4"
+        name="Task Update"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7f56e6e1-ee59-4092-8458-a734e107731b">
+            <actorMoniker
+              Id="9c378c2a-5d99-417d-811a-3cedeb40bcc5"
+              LastKnownName="LIS"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="407f57fe-1d45-4bae-b810-d85573d9a90d"
+            isDerived="false"
+            sourceEndRoleName="Task Update"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="62c4b371-ba8f-43aa-9086-eb3bf516f645"
+                  name="Task Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75f5968c-924c-4b0b-a889-937bf9d7cd5d"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dcd16074-2e09-4eb1-937c-f26bf6346ea9"
+        name="Value Update"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a4b01422-abf8-4e78-b9aa-f90443007ba9"
+            isDerived="false"
+            sourceEndRoleName="Value Update"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2639e6c5-7d59-4e0f-843d-8e6e638816bf"
+                  name="Value Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ef3d7bfc-7075-4cf6-9aba-bdaf5394af3a"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91d6ec53-901b-4302-b89a-de75fa878b9c"
+        name="Application Entry"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ac097705-4e94-4de6-9219-ac69a75b3680"
+            isDerived="false"
+            sourceEndRoleName="Application Entry"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="07453186-fd4b-4a7d-9eee-0ee0129e9824"
+                  name="Application Entry"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3995b20a-9b8e-49b1-8aae-b2bd9a81cc37"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b5d00ee4-edf1-498d-a4ea-05c7efd3850b"
+        name="New Ratings"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="675db6b1-9cff-4540-9a63-fe21189615cb">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="d7a7aef9-85a3-4649-9dc3-e4a5a0806bab"
+            isDerived="false"
+            sourceEndRoleName="New Ratings"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0e0682b-dfff-435e-8f6b-da5f4fbc77d7"
+                  name="New Ratings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99e33eab-85fc-4ffd-a4e4-2d0c4720c8f1"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6551748c-6c7e-4354-90a5-2426802103a2"
+        name="New Town Planning"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2c76a569-3644-45fe-b88f-6f069fa77e4a">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a011e76b-8875-48a0-89f8-16b76b142729"
+            isDerived="false"
+            sourceEndRoleName="New Town Planning"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="344b4f3d-f624-468a-9a79-2fe45e1be2d2"
+                  name="New Town Planning"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2454719a-3a88-4222-95ab-be1756e327f3"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a1924058-b617-4a8c-98ee-c2ce88d189cb"
+        name="New Zoning Codes"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="efa72bcf-386d-4a80-8a6e-e0bee8b55ef2">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="f3cd9d86-4171-44b3-8667-ce3dedcde731">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a95511bb-1a44-41a6-bd6a-25e2f76da84e"
+            isDerived="false"
+            sourceEndRoleName="New Zoning Codes"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ddc008f5-0a9d-4a8c-b29a-a32330c1e457"
+                  name="New Zoning Codes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d156c40-285f-4e4b-bd88-14393f96b07c"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fa99bc49-211e-48a7-90d0-2411bb0a7da5"
+        name="New Unit Type"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="a6678869-385f-4574-ac74-9a4e2e4a50bc">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="049cb741-764c-4a48-92a7-7fdbe13cf620"
+            isDerived="false"
+            sourceEndRoleName="New Unit Type"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a76e66f-23de-4cad-8ec0-a781394b5eef"
+                  name="New Unit Type"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c2ab81b-3f3e-482f-bcd9-8feafafab37f"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c78d7f56-82e0-4cbf-b247-b0f0c03fa08e"
+        name="New Valuation Types"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7bf8fab0-6ce5-4e06-9a91-bff0f47130ce">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b20377d-65cb-427d-9b4f-3c431f373774"
+        name="New Valuation Rolls"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f9b45061-42b3-4c05-803f-97ca77622684">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a6e09c24-5a56-4066-8fa5-910be01569f5"
+            isDerived="false"
+            sourceEndRoleName="New Valuation Rolls"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1531c508-93b3-47d2-abc0-d4983502359a"
+                  name="New Valuation Rolls"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d21f308-4185-42e2-a479-9a3f4da574a8"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="08d12cc4-e241-4b59-b215-b58a5949d777"
+        name="New Township Names"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="114a2f4a-0ebe-4edf-9ca8-c4173f82c9e2">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="f07f016d-9547-49bb-9279-9b3714c85b2a"
+            isDerived="false"
+            sourceEndRoleName="New Township Names"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b94b806-3536-440d-a536-826cbfdd9e1c"
+                  name="New Township Names"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="151723dc-12fa-4074-abe2-aa20c729705d"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="67ac4acc-af2f-492e-bc12-1d20db7b0fad"
+        name="New Sectional Schemes"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="695170cc-e58c-475d-a48d-cb4b70356e84">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a0b49a6d-2c0a-4547-be93-55e00a8e4a5a"
+            isDerived="false"
+            sourceEndRoleName="New Sectional Schemes"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb0d58da-fb16-4ed1-ad07-ed6228d33082"
+                  name="New Sectional Schemes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="043122ef-7255-4086-9ae0-62ad240a8782"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e79e8ef-1cd4-4712-bc87-fba5bdc9a318"
+        name="New Process Descriptions"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="14438d9d-6b71-4d47-9386-b201cc054db8">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="5d91c666-37fe-473e-8bc0-54456fd16984"
+            isDerived="false"
+            sourceEndRoleName="New Process Descriptions"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ea0728f-488c-4a20-935d-9b6ecacbae58"
+                  name="New Process Descriptions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="395e4113-4381-479e-a141-7182b07e78a0"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d6555c2-4f46-459d-8b2f-4a17c668bcab"
+        name="New Processes Status"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7057b9c4-d611-468e-9db9-c9df24556cac">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed3758d6-55d7-48f2-841b-182fc1216d0a"
+        name="New Valuation Remarks"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ad8268f4-95b8-427f-a9fe-705638dc3631">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="d9887653-5705-4ec8-81d3-6ad9a888c443"
+            isDerived="false"
+            sourceEndRoleName="New Valuation Remarks"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d16e95e2-631e-4660-b259-9bfd98fb1eb3"
+                  name="New Valuation Remarks"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7bbe478f-a99a-4eee-9635-a698e418aeb1"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c71c4da-626f-4ea7-8444-337120c44f79"
+        name="New Property Details"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="cbc0ccfc-1fff-4a11-a063-52a1965ce4dd">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="42aaf12e-aee6-4b25-85a5-954aa33d42d7"
+            isDerived="false"
+            sourceEndRoleName="New Property Details"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf3f0fe6-bcee-4ee2-89fa-d197c4b4e1ee"
+                  name="New Property Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d9675f6-b239-435a-bcff-d8ec71250c8b"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a434ec7a-14b4-48de-978b-2d62bcfce6d7"
+        name="LIS Data Update"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="92e6bce4-ece6-407c-974f-d01f39f738ce">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="57d35cf7-012d-47e2-a076-b551961c8a0a"
+            isDerived="false"
+            sourceEndRoleName="LIS Data Update"
+            targetEndRoleName="CoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="cca337d0-a9ba-4bf4-9f9f-56471a08ff30"
+              LastKnownName="CoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="92910bd6-3369-426b-96cf-4dc4d28eea9a"
+                  name="LIS Data Update"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c123bf0-60c6-4fa2-827c-122618a5603c"
+                  name="CoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="23054606-1037-49e4-9664-1b75ed5a57f9"
+        name="DoJ ESB"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2956d96a-3cb4-4e9f-837b-d9416bf373d1"
+            isDerived="false"
+            sourceEndRoleName="DoJ ESB"
+            targetEndRoleName="DoJ To LIS"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e10817d3-6011-404a-aef2-2c7f0ba51816"
+              LastKnownName="CoJ To LIS"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15cdfc8d-2d20-4e82-b9c0-b1b531bed184"
+                  name="DoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b2f68f4-a15d-48f4-a558-aecc9e9bc8d6"
+                  name="DoJ To LIS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c56d4763-894f-4119-981d-bffaab0bd74b"
+            isDerived="false"
+            sourceEndRoleName="DoJ ESB"
+            targetEndRoleName="DoJ To VA3"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="db4a7d9b-70a7-49b5-94b7-60f486eb1cc1"
+              LastKnownName="CoJ To VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77afb5bc-241f-4600-808e-506fd4bc13cf"
+                  name="DoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa66926a-4c23-4e4e-8983-1ab0958a0b54"
+                  name="DoJ To VA3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b79bd1d-1df8-486f-9509-1ddd2168176e"
+        name="LIS to VA3 Integrations"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="654c3f7a-7c3d-4bc8-8ebf-332985a1c8d4"
+            isDerived="false"
+            sourceEndRoleName="LIS to VA3 Integrations"
+            targetEndRoleName="DoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="23054606-1037-49e4-9664-1b75ed5a57f9"
+              LastKnownName="DoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e726a77c-285c-4bbb-bd38-4ad178089b6f"
+                  name="LIS to VA3 Integrations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d911860f-a238-4bed-b3cf-25f385dbcc71"
+                  name="DoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51602682-d885-47b3-89ac-326a1fac8fb9"
+        name="VA3 to LIS Integrations"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c80f4ddf-4a9a-4f67-a886-40d8f233fdba"
+            isDerived="false"
+            sourceEndRoleName="VA3 to LIS Integrations"
+            targetEndRoleName="DoJ ESB"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="23054606-1037-49e4-9664-1b75ed5a57f9"
+              LastKnownName="DoJ ESB"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d2c0518-a032-4153-8ad8-cb206f2cab48"
+                  name="VA3 to LIS Integrations"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87345b92-108e-43c0-a550-5452541a51c5"
+                  name="DoJ ESB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db4a7d9b-70a7-49b5-94b7-60f486eb1cc1"
+        name="CoJ To VA3"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c0acae23-dc1a-46fd-a4e9-25e51cdf5e23">
+            <actorMoniker
+              Id="7d2c58cc-c8b7-4076-84b3-bbc35315e5fe"
+              LastKnownName="VA3"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e10817d3-6011-404a-aef2-2c7f0ba51816"
+        name="CoJ To LIS"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5fc155ed-a09e-4dc1-8a73-da36323469e9">
+            <actorMoniker
+              Id="9c378c2a-5d99-417d-811a-3cedeb40bcc5"
+              LastKnownName="LIS"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33e058ad-2f65-4226-be8a-6399d989cc8a"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7b192e61-4ef0-499c-815a-1833c0a628ec"
+        name="Sequencer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f5b428b6-317b-49e2-a34d-c01164778e9b">
+            <componentMoniker
+              Id="15eeafc6-4773-4b67-a495-a8e4c7174f6c"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="27aca6d1-3bdf-4946-a5e0-a9261162a97c"
+        name="Receiver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="159f4bf8-b28e-4756-8e77-750b7fe2d00f">
+            <componentMoniker
+              Id="15eeafc6-4773-4b67-a495-a8e4c7174f6c"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="19d49956-994c-4492-95e3-c7cb2c5b7135"
+        name="Sender"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="15eeafc6-4773-4b67-a495-a8e4c7174f6c"
+        name="Message Validator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8ed69dfa-2f0c-4a62-b360-dd480375b201">
+            <componentMoniker
+              Id="ffe0d5b1-c317-4085-9126-c7166cc0c61b"
+              LastKnownName="Message Constructor"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="1ae18115-10ee-4391-b5a1-2063972b6696">
+            <componentMoniker
+              Id="451211ac-3f9f-45c1-a528-62d22b436171"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="454f1cdd-ad99-4aa7-a0a6-c72902a566d2">
+            <componentMoniker
+              Id="75aa1522-8fa6-455a-8a01-1a0cac71f5b3"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ffe0d5b1-c317-4085-9126-c7166cc0c61b"
+        name="Message Constructor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4553f023-220a-433c-85cb-a2ccf1679231">
+            <componentMoniker
+              Id="14e7a82e-09c6-4fc4-8a41-ff775efd1cd0"
+              LastKnownName="Router"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="84253b8c-da2e-48ea-849f-b04e35c2dfb0">
+            <componentMoniker
+              Id="451211ac-3f9f-45c1-a528-62d22b436171"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="14e7a82e-09c6-4fc4-8a41-ff775efd1cd0"
+        name="Router"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d9c2e9d9-15fd-467c-b930-763e1d53acba">
+            <componentMoniker
+              Id="451211ac-3f9f-45c1-a528-62d22b436171"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="e059f90f-dd5c-44ac-9796-6dfdf279c763">
+            <componentMoniker
+              Id="75aa1522-8fa6-455a-8a01-1a0cac71f5b3"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="6437e11e-93ec-4005-a5b5-f1c0df859b60">
+            <componentMoniker
+              Id="19d49956-994c-4492-95e3-c7cb2c5b7135"
+              LastKnownName="Sender"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="451211ac-3f9f-45c1-a528-62d22b436171"
+        name="ExceptionHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="75aa1522-8fa6-455a-8a01-1a0cac71f5b3"
+        name="Auditing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

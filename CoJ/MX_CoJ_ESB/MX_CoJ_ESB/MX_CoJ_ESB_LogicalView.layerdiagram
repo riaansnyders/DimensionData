@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ae02088f-a23c-4254-b8db-410ed3164965" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="b11a0679-bafa-49b9-84f5-d87405bdd470" name="Communication Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d30c495b-6e67-402e-9129-aa6a213c39a6" direction="Forward">
+          <layerMoniker Id="7c6a63f6-1ce6-4c3d-9278-bcc08f72c98c" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="a93a472e-941c-4597-b81b-3401b68a9e36" direction="Forward">
+          <layerMoniker Id="afe9ce95-ff7f-45dc-9137-2afc0c9c7b78" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6f089d51-f01a-493a-a009-cb38e585ba86" direction="Forward">
+          <layerMoniker Id="a7abc0a2-4351-4ba7-a163-ab5c86201f79" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="eeaa7b41-cac0-421f-a669-468d9cac36a7" name="Sequencer" />
+        <layer Id="07c3f5a6-adce-4193-b294-a48ef98e5118" name="Receiver" />
+        <layer Id="4e9cd925-d7cc-4098-b401-f8f07b430091" name="Sender" />
+      </childLayers>
+    </layer>
+    <layer Id="7c6a63f6-1ce6-4c3d-9278-bcc08f72c98c" name="Message Construction">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="737cede0-b833-425e-a3fc-2bf9765d0ed1" direction="Forward">
+          <layerMoniker Id="d544df98-aee0-4dbe-92d1-7dc1b7f56080" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="65b4b4f8-3b5e-4324-abaa-b53b7a3847b8" direction="Forward">
+          <layerMoniker Id="afe9ce95-ff7f-45dc-9137-2afc0c9c7b78" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="d225fdb0-9da3-43ca-844c-34c43f97c368" name="Validation" />
+        <layer Id="6b471048-11f4-4457-bb6a-c1112b727ee4" name="Transformation" />
+      </childLayers>
+    </layer>
+    <layer Id="a7abc0a2-4351-4ba7-a163-ab5c86201f79" name="Auditing" />
+    <layer Id="afe9ce95-ff7f-45dc-9137-2afc0c9c7b78" name="Exception Handling" />
+    <layer Id="d544df98-aee0-4dbe-92d1-7dc1b7f56080" name="Routing">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2f59ff46-f74f-4c37-8e2c-24b9f3fd3965" direction="Forward">
+          <layerMoniker Id="a7abc0a2-4351-4ba7-a163-ab5c86201f79" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="525cea1c-db1f-41a2-a60e-646891a01079" direction="Forward">
+          <layerMoniker Id="afe9ce95-ff7f-45dc-9137-2afc0c9c7b78" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="fb0edcf3-f8fc-4337-b720-e223346cba3b" direction="Forward">
+          <layerMoniker Id="b11a0679-bafa-49b9-84f5-d87405bdd470" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="93fcec19-20fc-4a69-81c3-eab9000928ff" name="Itinerary" />
+        <layer Id="71e76f2e-af83-4bee-95c4-412d92b8585e" name="Router" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
