@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="0e81d032-70ad-4728-bc12-acad36df7886" name="CoJ_Process_To_DesignElements" linkedPackageId="45fb3df8-2179-42ab-8b03-6ed68686239b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ec59b69a-a6fd-4664-8cd2-a2a8795dedfc">
+      <profileInstance Id="b307e8bd-5a56-4706-8b09-e7f0c7ccc562" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="47cee421-c26e-4437-b169-8a26a61a0060">
+      <profileInstance Id="b3accc49-6123-413b-910c-56c30c2100e7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d649da1a-88d3-4eca-8a69-e65c9644ae38" name="Sequencer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19e651c3-9d06-402f-9a74-19bd33721066" />
+        <suppliersInternal>
+          <dependency Id="8b21a6f4-3c59-4d71-8040-571fb1a6b857">
+            <classMoniker Id="cb6d1f4e-8684-4ad0-83a8-f7e99aaaaff1" LastKnownName="Message Validator" />
+            <elementDefinition Id="60450067-c891-41dd-948e-6b2720b06530" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="f6510070-4505-4bc0-ae97-0d95a78f8b3b" name="GetMessageSequence" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79a2a0be-fc1c-4fd0-b07c-aa82a431f303" />
+          </operation>
+          <operation Id="a40d1ecd-3fef-4952-80ae-c045c52afdbf" name="GetMessageInSequence" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a5125a69-f1d1-4c29-ae40-6206e6c90e43" />
+          </operation>
+          <operation Id="555ade1c-2027-4214-95e7-d98a378c089c" name="MessageToQueue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e96c782-90bf-4b37-a431-e29d99f2956a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cec375f4-f307-4110-97c3-d6371b2007c6" name="Receiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4b18b8b-e03b-4ecf-bb4f-4eab024d1fcf" />
+        <suppliersInternal>
+          <dependency Id="e0edd5ec-6248-4ac5-9bdf-6067d197a0c9">
+            <classMoniker Id="cb6d1f4e-8684-4ad0-83a8-f7e99aaaaff1" LastKnownName="Message Validator" />
+            <elementDefinition Id="a1949ca1-6b07-4c2b-9968-45f14c4c3733" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="5bcbdf43-d204-4a79-ab29-0d90886c94f2" name="ReceiveMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c17352d4-53f3-44eb-bc04-59659cf3a8c4" />
+          </operation>
+          <operation Id="94594f09-f3f9-415f-8a1c-58bbe457b39f" name="MessageToQueue" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48b29c1a-474e-40f6-9270-32042fdcb03f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6eb15a8e-db09-4a1c-824b-96fefce9435c" name="Sender" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55312d6b-f37c-46b9-a20e-3e09c650663a" />
+        <ownedOperationsInternal>
+          <operation Id="c4e3ee22-a928-4f31-8a7a-d0d87a93908a" name="DeliverMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19c9e5b6-47f8-45b3-810e-0e32f0a5317f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cb6d1f4e-8684-4ad0-83a8-f7e99aaaaff1" name="Message Validator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d20da797-6d35-4e5e-8ecb-f812d2ce9c1a" />
+        <suppliersInternal>
+          <dependency Id="2140dca7-142a-4436-91db-50a544be3c3b">
+            <classMoniker Id="3132f731-57ef-4008-ac77-f7471a00e505" LastKnownName="Message Constructor" />
+            <elementDefinition Id="b19a0d96-1b69-4bd0-84b3-3ee2843482c2" />
+          </dependency>
+          <dependency Id="a94a1ef2-85c6-427d-9d71-cbbbe72e9054">
+            <classMoniker Id="8b93bebf-ca52-41ad-a33d-3c0de57ba92f" LastKnownName="Exception Handler" />
+            <elementDefinition Id="77a2a9f1-1f66-4c7e-81f9-321233609803" />
+          </dependency>
+          <dependency Id="c60a121a-f2d0-497c-ba5a-f0895ec33fa1">
+            <classMoniker Id="9d303fbe-ec23-4a44-9353-cfb735584414" LastKnownName="Auditing" />
+            <elementDefinition Id="9e919df5-de24-425b-9a28-6718937b03d8" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="36934da9-31ef-48ac-9f9a-cc47c6d94631" name="Validate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba77f414-59df-42e2-bde3-8fd9d5b7442f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3132f731-57ef-4008-ac77-f7471a00e505" name="Message Constructor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b87a4ede-90e7-4467-be21-11c679de38f3" />
+        <suppliersInternal>
+          <dependency Id="c367d401-3233-40a3-a54c-ccccb2c81353">
+            <classMoniker Id="9b43961c-82bc-4a95-a5f5-abf187a7ea04" LastKnownName="Router" />
+            <elementDefinition Id="e9159d05-a53e-4b80-b287-915adbb06739" />
+          </dependency>
+          <dependency Id="5f49ec81-2111-4cd4-a32f-2cdc83d5c2e5">
+            <classMoniker Id="8b93bebf-ca52-41ad-a33d-3c0de57ba92f" LastKnownName="Exception Handler" />
+            <elementDefinition Id="b00b2207-38cf-44b5-810d-13c2ca45d8f1" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="25eb0e1e-1fc2-4485-b336-60ae5c3bfb5e" name="Transform" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19942b08-f2cb-4dfd-9db5-a1e5fe78c87c" />
+          </operation>
+          <operation Id="e574f22a-68c6-4e2d-85f0-1ed395e31886" name="Construct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="345e068e-df58-4ee9-8fed-8791f538072d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8b93bebf-ca52-41ad-a33d-3c0de57ba92f" name="Exception Handler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297" />
+        <ownedOperationsInternal>
+          <operation Id="a006741f-7a1b-4fc6-b458-4e83f6debdcd" name="HandleException" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ed8b69f-d943-4832-96b3-21b9319aae80" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9d303fbe-ec23-4a44-9353-cfb735584414" name="Auditing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d31bb68d-4f9a-4704-8218-710a4f195d21" />
+        <ownedOperationsInternal>
+          <operation Id="fbc1495c-f262-430e-aadd-19ec816c252d" name="LogMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="08174965-b3b2-4007-8703-bc9113e1f34b" />
+          </operation>
+          <operation Id="d3742ae5-8ea9-4cf1-92c8-324bda705bec" name="UpdateLog" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b5070f1-cf60-4e3a-bec4-a7b9b2bdecff" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b43961c-82bc-4a95-a5f5-abf187a7ea04" name="Router" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2b4565b8-29c0-40a1-a45f-588f9d366f74" />
+        <suppliersInternal>
+          <dependency Id="45be3334-cce5-4a40-8a04-3cfdeaacb29a">
+            <classMoniker Id="9d303fbe-ec23-4a44-9353-cfb735584414" LastKnownName="Auditing" />
+            <elementDefinition Id="16f3dd18-0985-4e56-8048-713c25386887" />
+          </dependency>
+          <dependency Id="7de0845c-6154-4083-8ed5-9ef3f924bd24">
+            <classMoniker Id="8b93bebf-ca52-41ad-a33d-3c0de57ba92f" LastKnownName="Exception Handler" />
+            <elementDefinition Id="5463e2e9-d7f9-49b0-8272-0a7af133e777" />
+          </dependency>
+          <dependency Id="5fd29eab-bca1-4579-a59d-e9e5205115d9">
+            <classMoniker Id="6eb15a8e-db09-4a1c-824b-96fefce9435c" LastKnownName="Sender" />
+            <elementDefinition Id="b507e7ec-0a1b-4ea8-a425-e54c2a32e02d" />
+          </dependency>
+          <dependency Id="d671681c-3ef8-4fa4-a343-beaad0593782">
+            <classMoniker Id="8b93bebf-ca52-41ad-a33d-3c0de57ba92f" LastKnownName="Exception Handler" />
+            <elementDefinition Id="f83475dd-242b-42fa-bda6-304f0be6a77d" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="7578405d-eb45-432d-8f27-2e8b8e9d5782" name="GetRecipientList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="75410984-ca2c-451d-ba12-967db3a7631a" />
+          </operation>
+          <operation Id="d7b67545-f3e4-47de-9a3c-77ac7273357b" name="RouteMessageToRecipient" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc272a5b-a45d-45d5-a014-568f52b2620d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="45fb3df8-2179-42ab-8b03-6ed68686239b" name="MX_CoJ_ESB">
+    <elementDefinition Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b" />
+  </package>
+</logicalClassDesignerModel>

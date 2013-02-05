@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e682d7a2-6b35-469c-9394-6f8ef642bebc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="3eaadb8a-d3b4-423f-9b83-995cf1e5b1ab" name="Comment1">
+      <body>The COJ ESB is a single server enviroment. The SQL Server requirement is seen as part of the BizTalk Server / ESB component.</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="11b54d10-68de-4c13-9f35-a63226a765c8" name="COJ ESB">
+      <childLayers>
+        <layer Id="bd59ed11-a912-447e-b933-ea020dac7d31" name="Communication Layer (IIS / Windows Service)">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7ddc8407-1285-4f22-b30a-25df056a3aed" direction="Bidirectional">
+              <layerMoniker Id="4a7f97ac-717b-4268-9cec-9b0f0b27e706" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="4a7f97ac-717b-4268-9cec-9b0f0b27e706" name="COJ ESB (BizTalk Server)" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

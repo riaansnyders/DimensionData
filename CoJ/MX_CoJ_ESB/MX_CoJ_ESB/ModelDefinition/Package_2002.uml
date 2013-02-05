@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="29920ccd-9c1e-4b79-ad7e-b57de0efdf2d"
+  name="Message Construction" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="598b65a1-4134-47cb-adf5-f8b5d91d1e45">
+      <packageMoniker
+        Id="6fb4af2f-7ecf-43af-914d-5b2ebe5ec474"
+        LastKnownName="Routing"
+        LastKnownLocation="Package_2033.uml" />
+    </dependency>
+    <dependency
+      Id="6f4f5aea-260b-4015-b97a-815be9662d44">
+      <packageMoniker
+        Id="f626b355-4fea-4eb9-83e4-8d7b53b37c20"
+        LastKnownName="Exception Handling"
+        LastKnownLocation="Package_2034.uml" />
+    </dependency>
+    <dependency
+      Id="a5ebe770-f4df-4eca-88af-16261ba22315">
+      <packageMoniker
+        Id="64cce8cc-44b9-4671-a292-4ed46dedbee3"
+        LastKnownName="Auditing"
+        LastKnownLocation="Package1_2034.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="24ed6007-ef5b-4f09-93b8-08ea6ef129f1"
+        name="Validator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e61ec0a0-26a7-45b8-ac1d-3f6d4b614081"
+        name="Constructor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

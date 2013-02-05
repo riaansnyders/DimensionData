@@ -1,25 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="71a1dfce-1a1a-45dc-abfe-977f75d12a04" name="MX_Doj_ESB_UseCase" linkedPackageId="dbd384eb-f55e-43cf-8e1b-1c2c74003182" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="71a1dfce-1a1a-45dc-abfe-977f75d12a04" name="MX_Doj_ESB_UseCase" linkedPackageId="dbd384eb-f55e-43cf-8e1b-1c2c74003182" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="d2eaebfd-8982-463f-816a-0dc6aad308ff">
       <elementDefinition Id="fde255bc-2572-49b8-ac36-e279e59c4e02" />
-      <body>This is a Generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
+      <body>This is a generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="bbdba556-31a9-43e2-9124-9ef30df8c8ff">
-      <profileInstance Id="1d6df0d9-5533-488a-ad6f-1fbffa128e60" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="456cb0ff-7c1f-4077-b29e-4a6ffc90c7d0">
-      <profileInstance Id="8ac0b7f3-23a0-4c49-a5e0-352e2ac0cde5" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="7a97ef2b-c6e6-4000-84f5-a03c5198ec2f" name="LIS" isAbstract="false" isLeaf="false">
@@ -153,5 +139,19 @@
   </packagedElements>
   <package Id="dbd384eb-f55e-43cf-8e1b-1c2c74003182" name="MX_CoJ_ESB">
     <elementDefinition Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bbdba556-31a9-43e2-9124-9ef30df8c8ff">
+        <profileInstance Id="1d6df0d9-5533-488a-ad6f-1fbffa128e60" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="456cb0ff-7c1f-4077-b29e-4a6ffc90c7d0">
+        <profileInstance Id="8ac0b7f3-23a0-4c49-a5e0-352e2ac0cde5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

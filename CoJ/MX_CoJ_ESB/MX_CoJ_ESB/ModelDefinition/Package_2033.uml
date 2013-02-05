@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="6fb4af2f-7ecf-43af-914d-5b2ebe5ec474"
+  name="Routing" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="ef39363c-7237-4d70-8262-754434b23ade">
+      <packageMoniker
+        Id="1f847cf7-add5-454f-b4b8-00b289554667"
+        LastKnownName="Communication Layer"
+        LastKnownLocation="Package_2001.uml" />
+    </dependency>
+    <dependency
+      Id="aece39dc-28b9-45be-9015-4adc70561577">
+      <packageMoniker
+        Id="f626b355-4fea-4eb9-83e4-8d7b53b37c20"
+        LastKnownName="Exception Handling"
+        LastKnownLocation="Package_2034.uml" />
+    </dependency>
+    <dependency
+      Id="091f4147-5ad0-4322-a770-5bb4449e21ed">
+      <packageMoniker
+        Id="64cce8cc-44b9-4671-a292-4ed46dedbee3"
+        LastKnownName="Auditing"
+        LastKnownLocation="Package1_2034.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a4224328-b6fd-4cb2-91b2-a248173cb084"
+        name="Router"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

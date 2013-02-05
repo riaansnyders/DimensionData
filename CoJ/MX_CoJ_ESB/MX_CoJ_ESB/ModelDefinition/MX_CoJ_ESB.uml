@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b"
   name="MX_CoJ_ESB" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
       Id="fde255bc-2572-49b8-ac36-e279e59c4e02">
-      <body>This is a Generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
+      <body>This is a generalisation. For Full list of all integration Use Cases, please see detailed SAD document</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -1508,6 +1508,472 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2bcef0d5-844a-46f2-a972-0afd2f289ba4"
+        name="Sequencer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f670e0a8-7327-48be-987f-d82b1c3c0ac3">
+            <componentMoniker
+              Id="302c1197-a67e-4672-b7ac-9103104f85d2"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fdd66d9e-82c8-4a8b-8dd3-9ba8aecb8f74"
+        name="Receiver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ea0b9cd4-ff2c-4379-8a56-0bb71d06186a">
+            <componentMoniker
+              Id="302c1197-a67e-4672-b7ac-9103104f85d2"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3a55e039-0e8b-4d9a-9e3d-1f55db750830"
+        name="Sender"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="302c1197-a67e-4672-b7ac-9103104f85d2"
+        name="Message Validator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f77a07e4-86aa-4b02-a055-0bf73f94e1fe">
+            <componentMoniker
+              Id="2da08671-2f3b-4f44-a15d-965c1d42e866"
+              LastKnownName="Message Constructor"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="c0a5db44-fea8-4e14-a176-4a3e7160b057">
+            <componentMoniker
+              Id="50cadf82-bef0-4ad3-b87b-0ce31967b9de"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="aa257ec8-a79d-4eaa-8866-f12012de961f">
+            <componentMoniker
+              Id="14776dc3-7670-49e3-8155-a9a5a75b5ffb"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2da08671-2f3b-4f44-a15d-965c1d42e866"
+        name="Message Constructor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="90173f68-a981-47be-bb4c-b889069a866d">
+            <componentMoniker
+              Id="39619f22-786a-426d-88c2-1764bbdde717"
+              LastKnownName="Router"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="4f6dfc18-10a6-4053-86bc-471b3a4ec365">
+            <componentMoniker
+              Id="50cadf82-bef0-4ad3-b87b-0ce31967b9de"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="39619f22-786a-426d-88c2-1764bbdde717"
+        name="Router"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0767c6f3-88f5-46de-9fbf-8ee4af64795d">
+            <componentMoniker
+              Id="50cadf82-bef0-4ad3-b87b-0ce31967b9de"
+              LastKnownName="ExceptionHandler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="29e9a847-1b5a-4c88-992a-9bdf44486cff">
+            <componentMoniker
+              Id="14776dc3-7670-49e3-8155-a9a5a75b5ffb"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="3a38db62-c9f6-46f8-ae9b-003d484c248a">
+            <componentMoniker
+              Id="3a55e039-0e8b-4d9a-9e3d-1f55db750830"
+              LastKnownName="Sender"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="50cadf82-bef0-4ad3-b87b-0ce31967b9de"
+        name="ExceptionHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="14776dc3-7670-49e3-8155-a9a5a75b5ffb"
+        name="Auditing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19e651c3-9d06-402f-9a74-19bd33721066"
+        name="Sequencer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="60450067-c891-41dd-948e-6b2720b06530">
+            <classMoniker
+              Id="d20da797-6d35-4e5e-8ecb-f812d2ce9c1a"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="79a2a0be-fc1c-4fd0-b07c-aa82a431f303"
+            name="GetMessageSequence"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a5125a69-f1d1-4c29-ae40-6206e6c90e43"
+            name="GetMessageInSequence"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6e96c782-90bf-4b37-a431-e29d99f2956a"
+            name="MessageToQueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4b18b8b-e03b-4ecf-bb4f-4eab024d1fcf"
+        name="Receiver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a1949ca1-6b07-4c2b-9968-45f14c4c3733">
+            <classMoniker
+              Id="d20da797-6d35-4e5e-8ecb-f812d2ce9c1a"
+              LastKnownName="Message Validator"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c17352d4-53f3-44eb-bc04-59659cf3a8c4"
+            name="ReceiveMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="48b29c1a-474e-40f6-9270-32042fdcb03f"
+            name="MessageToQueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="55312d6b-f37c-46b9-a20e-3e09c650663a"
+        name="Sender"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="19c9e5b6-47f8-45b3-810e-0e32f0a5317f"
+            name="DeliverMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d20da797-6d35-4e5e-8ecb-f812d2ce9c1a"
+        name="Message Validator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b19a0d96-1b69-4bd0-84b3-3ee2843482c2">
+            <classMoniker
+              Id="b87a4ede-90e7-4467-be21-11c679de38f3"
+              LastKnownName="Message Constructor"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="77a2a9f1-1f66-4c7e-81f9-321233609803">
+            <classMoniker
+              Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297"
+              LastKnownName="Exception Handler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="9e919df5-de24-425b-9a28-6718937b03d8">
+            <classMoniker
+              Id="d31bb68d-4f9a-4704-8218-710a4f195d21"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ba77f414-59df-42e2-bde3-8fd9d5b7442f"
+            name="Validate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b87a4ede-90e7-4467-be21-11c679de38f3"
+        name="Message Constructor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="e9159d05-a53e-4b80-b287-915adbb06739">
+            <classMoniker
+              Id="2b4565b8-29c0-40a1-a45f-588f9d366f74"
+              LastKnownName="Router"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="b00b2207-38cf-44b5-810d-13c2ca45d8f1">
+            <classMoniker
+              Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297"
+              LastKnownName="Exception Handler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="19942b08-f2cb-4dfd-9db5-a1e5fe78c87c"
+            name="Transform"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="345e068e-df58-4ee9-8fed-8791f538072d"
+            name="Construct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297"
+        name="Exception Handler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="1ed8b69f-d943-4832-96b3-21b9319aae80"
+            name="HandleException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d31bb68d-4f9a-4704-8218-710a4f195d21"
+        name="Auditing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="08174965-b3b2-4007-8703-bc9113e1f34b"
+            name="LogMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1b5070f1-cf60-4e3a-bec4-a7b9b2bdecff"
+            name="UpdateLog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2b4565b8-29c0-40a1-a45f-588f9d366f74"
+        name="Router"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="16f3dd18-0985-4e56-8048-713c25386887">
+            <classMoniker
+              Id="d31bb68d-4f9a-4704-8218-710a4f195d21"
+              LastKnownName="Auditing"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="5463e2e9-d7f9-49b0-8272-0a7af133e777">
+            <classMoniker
+              Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297"
+              LastKnownName="Exception Handler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="b507e7ec-0a1b-4ea8-a425-e54c2a32e02d">
+            <classMoniker
+              Id="55312d6b-f37c-46b9-a20e-3e09c650663a"
+              LastKnownName="Sender"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+          <dependency
+            Id="f83475dd-242b-42fa-bda6-304f0be6a77d">
+            <classMoniker
+              Id="c2355cb1-26cc-4ff6-b86a-1371af1a7297"
+              LastKnownName="Exception Handler"
+              LastKnownLocation="MX_CoJ_ESB.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="75410984-ca2c-451d-ba12-967db3a7631a"
+            name="GetRecipientList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bc272a5b-a45d-45d5-a014-568f52b2620d"
+            name="RouteMessageToRecipient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1f847cf7-add5-454f-b4b8-00b289554667"
+        LastKnownName="Communication Layer"
+        LastKnownLocation="Package_2001.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="29920ccd-9c1e-4b79-ad7e-b57de0efdf2d"
+        LastKnownName="Message Construction"
+        LastKnownLocation="Package_2002.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6fb4af2f-7ecf-43af-914d-5b2ebe5ec474"
+        LastKnownName="Routing"
+        LastKnownLocation="Package_2033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f626b355-4fea-4eb9-83e4-8d7b53b37c20"
+        LastKnownName="Exception Handling"
+        LastKnownLocation="Package_2034.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="64cce8cc-44b9-4671-a292-4ed46dedbee3"
+        LastKnownName="Auditing"
+        LastKnownLocation="Package1_2034.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

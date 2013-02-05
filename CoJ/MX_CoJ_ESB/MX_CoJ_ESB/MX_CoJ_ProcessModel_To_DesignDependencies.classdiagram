@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="6ea847c7-9979-4d9a-9168-e861f88d91e5" name="MX_CoJ_ProcessModel_To_DesignDependencies" linkedPackageId="7567b9dd-0822-4c76-a473-defb548e9434" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dbab95dd-7962-4800-b350-eb580fc97170">
+      <profileInstance Id="7c1d7e2c-bb78-48a5-8685-ffcc0a527f4a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e81e0fd6-478b-4359-bed3-815b381b4214">
+      <profileInstance Id="79ab7516-3f4a-4d26-a03b-635f0065bf13" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ec66f0b1-98c3-4efa-889d-d96cb3620f53" name="Communication Layer">
+        <elementDefinition Id="1f847cf7-add5-454f-b4b8-00b289554667" />
+        <suppliersInternal>
+          <dependency Id="0428981e-6e8f-4585-906a-2a4a86af61aa">
+            <packageMoniker Id="3bde6db6-69ca-46f9-bd7e-c525012cf274" LastKnownName="Message Construction" />
+            <elementDefinition Id="f03ee931-aaa8-4294-a4e7-ae6628e4d006" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="6feaf22b-2bb7-4244-bd29-28dd37ce7cc4" name="Sequencer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b4530cca-8d09-4bf8-963c-53034ad1a60a" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f6346334-201d-40a5-a6b6-54d0c3a39456" name="Receiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8ee52228-b3ac-4d35-9abb-e325aab900d3" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1a2442b1-98cc-4f03-9270-1eb0f47c42d5" name="Sender" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="abb90108-c483-4a98-a3de-862a5346fabd" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3bde6db6-69ca-46f9-bd7e-c525012cf274" name="Message Construction">
+        <elementDefinition Id="29920ccd-9c1e-4b79-ad7e-b57de0efdf2d" />
+        <suppliersInternal>
+          <dependency Id="23c9f46b-0645-41c4-b2c6-7db1350bcec2">
+            <packageMoniker Id="a5d6adb5-99bb-4f38-9f8d-4f8cd4b2688b" LastKnownName="Routing" />
+            <elementDefinition Id="598b65a1-4134-47cb-adf5-f8b5d91d1e45" />
+          </dependency>
+          <dependency Id="760c35d6-1240-459d-ab87-c23cb0c21025">
+            <packageMoniker Id="8e233cf9-f54e-4ebb-a209-b8cc2078c61b" LastKnownName="Exception Handling" />
+            <elementDefinition Id="6f4f5aea-260b-4015-b97a-815be9662d44" />
+          </dependency>
+          <dependency Id="ee306bc3-3448-4daf-8790-8fa32c1fa735">
+            <packageMoniker Id="ab083441-a9a6-4141-8dd3-b56385a0a316" LastKnownName="Auditing" />
+            <elementDefinition Id="a5ebe770-f4df-4eca-88af-16261ba22315" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="e35d5f3b-6026-4d0f-9a61-11a955cb3734" name="Validator" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="24ed6007-ef5b-4f09-93b8-08ea6ef129f1" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e7dc0cb1-ccc8-42de-ae87-52df5c1f9c57" name="Constructor" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e61ec0a0-26a7-45b8-ac1d-3f6d4b614081" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="a5d6adb5-99bb-4f38-9f8d-4f8cd4b2688b" name="Routing">
+        <elementDefinition Id="6fb4af2f-7ecf-43af-914d-5b2ebe5ec474" />
+        <suppliersInternal>
+          <dependency Id="c56d3b57-0b27-4a2a-b414-f93a147da79d">
+            <packageMoniker Id="ec66f0b1-98c3-4efa-889d-d96cb3620f53" LastKnownName="Communication Layer" />
+            <elementDefinition Id="ef39363c-7237-4d70-8262-754434b23ade" />
+          </dependency>
+          <dependency Id="c81dafc5-77fe-4ea4-a0f2-17eafbee3151">
+            <packageMoniker Id="8e233cf9-f54e-4ebb-a209-b8cc2078c61b" LastKnownName="Exception Handling" />
+            <elementDefinition Id="aece39dc-28b9-45be-9015-4adc70561577" />
+          </dependency>
+          <dependency Id="d20406cc-fe11-4295-ba00-daed63880585">
+            <packageMoniker Id="ab083441-a9a6-4141-8dd3-b56385a0a316" LastKnownName="Auditing" />
+            <elementDefinition Id="091f4147-5ad0-4322-a770-5bb4449e21ed" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="edaed2ef-9b88-4207-b1ba-9cb9d68cda6d" name="Router" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a4224328-b6fd-4cb2-91b2-a248173cb084" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8e233cf9-f54e-4ebb-a209-b8cc2078c61b" name="Exception Handling">
+        <elementDefinition Id="f626b355-4fea-4eb9-83e4-8d7b53b37c20" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="268bfe94-b22f-4cf3-9a72-87f0f66dab0a" name="ExceptionHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1e4a50c4-8105-4dc9-9bf2-7c8966dc1355" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ab083441-a9a6-4141-8dd3-b56385a0a316" name="Auditing">
+        <elementDefinition Id="64cce8cc-44b9-4671-a292-4ed46dedbee3" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="599e7642-4dc7-4f12-a041-30bcc65d800e" name="Auditing" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="71d80acf-cf2b-4e16-abae-f8004e45191e" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="7567b9dd-0822-4c76-a473-defb548e9434" name="MX_CoJ_ESB">
+    <elementDefinition Id="eb752811-aab9-4fcc-b8c9-ad784fc5b30b" />
+  </package>
+</logicalClassDesignerModel>

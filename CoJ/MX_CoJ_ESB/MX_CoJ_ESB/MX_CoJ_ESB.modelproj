@@ -17,12 +17,34 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="DoJ_ESB_ProcessView.componentdiagram">
+    <Content Include="CoJ_Process_To_DesignElements.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="DoJ_ESB_ProcessView.componentdiagram.layout">
+    <Content Include="CoJ_Process_To_DesignElements.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>DoJ_ESB_ProcessView.componentdiagram</DependentUpon>
+      <DependentUpon>CoJ_Process_To_DesignElements.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CoJ_ESB_ProcessView.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CoJ_ESB_ProcessView.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CoJ_ESB_ProcessView.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2034.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2001.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2002.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2033.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2034.uml">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="MX_Coj_ESB_UseCase.usecasediagram">
       <SubType>Content</SubType>
@@ -30,6 +52,13 @@
     <Content Include="MX_Coj_ESB_UseCase.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>MX_Coj_ESB_UseCase.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="MX_CoJ_ProcessModel_To_DesignDependencies.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MX_CoJ_ProcessModel_To_DesignDependencies.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MX_CoJ_ProcessModel_To_DesignDependencies.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\MX_CoJ_ESB.uml">
@@ -47,6 +76,17 @@
     <Validate Include="MX_CoJ_ESB_LogicalView.layerdiagram.suppressions">
       <SubType>Content</SubType>
       <DependentUpon>MX_CoJ_ESB_LogicalView.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="MX_DoJ_DeployementView.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="MX_DoJ_DeployementView.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MX_DoJ_DeployementView.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="MX_DoJ_DeployementView.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>MX_DoJ_DeployementView.layerdiagram</DependentUpon>
     </Validate>
   </ItemGroup>
 </Project>
