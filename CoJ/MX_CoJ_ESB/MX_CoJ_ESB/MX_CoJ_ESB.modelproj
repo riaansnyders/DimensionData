@@ -46,6 +46,13 @@
     <Content Include="ModelDefinition\Package_2034.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="MX_CoJ_ESB_Sequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MX_CoJ_ESB_Sequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MX_CoJ_ESB_Sequence.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="MX_Coj_ESB_UseCase.usecasediagram">
       <SubType>Content</SubType>
     </Content>
