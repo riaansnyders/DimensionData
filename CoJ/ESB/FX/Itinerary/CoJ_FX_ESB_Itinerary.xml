@@ -1,0 +1,1 @@
+<Itinerary xmlns="http://CoJ.esb/services/itinerary" version="1.0" name="Sample"><Resolver identifier="TaskUpdate"><ResolverGroup routingType="Messaging"><EndPoint protocol="WCF-LIS" location="http://localhost/Service/Service.svc" requireTransformation="false" transformationXSL="" requireRulesPolicy="false" rulesPolicyName="" /></ResolverGroup></Resolver></Itinerary>

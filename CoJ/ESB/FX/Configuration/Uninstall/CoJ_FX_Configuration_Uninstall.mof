@@ -1,0 +1,4 @@
+#pragma namespace("\\\\.\\Root\\CoJ")
+
+#pragma deleteinstance
+    ("__Namespace.Name='Configuration'", FAIL)

@@ -1,0 +1,45 @@
+#pragma classflags ("forceupdate")
+
+#pragma namespace ("\\\\.\\Root")
+ 
+instance of __Namespace
+{
+    Name = "CoJ";
+};
+
+#pragma namespace("\\root\\CoJ")
+
+instance of __Namespace
+{
+    Name = "Configuration";
+};
+
+#pragma namespace("\\root\\CoJ\\Configuration")
+
+// Base Classes
+
+// Property
+
+Class Setting
+{
+	[Description("Property Name."), key, read, write, required] 
+		string Name = "";
+
+	[Description("Property Value."), read, write, required] 
+		string Value = "";		
+};
+
+// Application
+
+class Application
+{
+    [Description("Application Name"), key, read, write, required] 
+	string Name = "";
+
+    [Description("Application Description."), read, write, required] 
+	string Description = "";
+
+    [Description("Settings for the Application.")]
+	Setting Settings[];
+};
+
